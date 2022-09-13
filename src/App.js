@@ -7,16 +7,16 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          CS5610 Week 1
+          CS5610 Week 2
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <ul>
+          <li>
+            <a href="labs/a2/index.html" className="App-link">Assignment 2</a>
+          </li>
+          <li>
+            <a href=""  className="App-link">Tuiter</a>
+          </li>
+        </ul>
       </header>
     </div>
   );
