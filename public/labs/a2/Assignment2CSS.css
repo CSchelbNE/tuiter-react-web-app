@@ -33,6 +33,15 @@ body > h2 {
   color: #61dafb;
 }
 
+div > h2 {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(12px + 2vmin);
+  color: #61dafb;
+}
+
 body > h1 {
   margin: 10px;
   display: flex;
@@ -41,6 +50,8 @@ body > h1 {
   font-size: calc(15px + 2vmin);
   color: #61dafb;
 }
+
+
 
 body > h3 {
   margin: 10px;
@@ -94,6 +105,10 @@ div > div > input {
 }
 
 .calender:hover {
+  color: #61dafb;
+}
+
+.hyperlink:hover{
   color: #61dafb;
 }
 
