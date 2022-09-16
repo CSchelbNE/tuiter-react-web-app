@@ -14,7 +14,7 @@ function App() {
             <a href="labs/a2/index.html" className="App-link">Assignment 2</a>
           </li>
           <li>
-            <a href=""  className="App-link">Tuiter</a>
+            <a href="tuiter/navigation.html"  className="App-link">Tuiter</a>
           </li>
         </ul>
       </header>
