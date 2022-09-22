@@ -16,9 +16,12 @@ a:visited {
 a:hover {
     color: #61dafb;
 }
+
 a {
     color: #61dafb;
 }
+
+
 
 .reply-retuit-like-share-footer > a {
     margin: 0 7px 0 7px;

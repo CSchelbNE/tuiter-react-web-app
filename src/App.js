@@ -6,9 +6,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          CS5610 Week 2
-        </p>
+        <h1>Web Dev Assignments</h1>
         <ul>
           <li>
             <a href="labs/a2/index.html" className="App-link">Assignment 2</a>
