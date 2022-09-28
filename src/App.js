@@ -12,6 +12,9 @@ function App() {
             <a href="labs/a2/index.html" className="App-link">Assignment 2</a>
           </li>
           <li>
+            <a href="labs/a3/index.html" className="App-link">Assignment 3</a>
+          </li>
+          <li>
             <a href="tuiter/navigation.html"  className="App-link">Tuiter</a>
           </li>
         </ul>
