@@ -1,24 +1,24 @@
 .main-bg {
-    background-color: #282c34;
+    background-color: black;
     color: white;
     font-size: calc(1px + 2vmin);
     margin: 15px;
 }
 
 body > h1,h2 {
-    color: #61dafb;
+    color: rgb(29,161,242);
 }
 
 a:visited {
-    color: mediumpurple;
+    color: rebeccapurple;
 }
 
 a:hover {
-    color: #61dafb;
+    color: rgb(29,161,242);
 }
 
 a {
-    color: #61dafb;
+    color: rgb(29,161,242);
 }
 
 
