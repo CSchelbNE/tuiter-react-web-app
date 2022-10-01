@@ -217,6 +217,244 @@ p#id-selector-2 {
     color: white;
 }
 
+.rotate-list-items li {
+    width: 100px;
+    text-align: right;
+}
+.rotate-list-items li:nth-child(1) {
+    transform: rotate(-10deg);
+    background-color: yellow;
+}
+.rotate-list-items li:nth-child(2) {
+    transform: rotate(2deg);
+    background-color: blue;
+    color: white;
+}
+.rotate-list-items li:nth-child(3) {
+    transform: rotate(10deg);
+    background-color: red;
+}
+.rotate-image {
+    transform: rotate(-10deg);
+}
+.rotate-table {
+    position: relative;
+    left: 50px;
+    transform: rotate(15deg);}
+.rotate-table tr:nth-child(1) {
+    background-color: black;
+    color: white;}
+.rotate-table tr:nth-child(n+2) {
+    background-color: yellow;}
+.rotate-table tr:nth-child(n+5) {
+    background-color: blue;
+    color: white;}
+.rotate-table tr:nth-child(n+8) {
+    background-color: red;}
+.rotate-table tr:nth-child(n+11) {
+    background-color: green;
+    color: white;
+}
+.gradients-linear {
+    background: linear-gradient(paleturquoise, purple);
+    width: 200px;
+    height: 200px;
+}
+.gradients-radial {
+    background: radial-gradient(orchid, black);
+    width: 200px;
+    height: 200px;
+}
+.gradients-positioned {
+    background:
+            radial-gradient(
+                    at bottom right, darkseagreen, dimgray);
+    width: 200px;
+    height: 200px;
+    color: black;
+}
+
+.animation-keyframes {
+    position: relative;
+    top: 0px;
+    animation-duration: 7s;
+    animation-name: slidein;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    color: white;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes slidein {
+    from {
+        position: relative;
+        top: 0px;
+        font-size: 10%;
+        margin-left: 100%;
+        width: 2px;
+        height: 10px;
+        background-color: darkseagreen;
+        color: mediumpurple;
+    }
+    50% {
+        position: relative;
+        top: -200px;
+        font-size: 300%;
+        margin-left: 25%;
+        width: 900px;
+        height: 100px;
+        background-color: fuchsia;
+        color: white;
+    }
+
+    to {
+        position: relative;
+        top: 0px;
+        font-size: 100%;
+        margin-left: 0%;
+        width: 200px;
+        height: 200px;
+        background-color: cornflowerblue;
+        color: goldenrod;
+    }
+}
+.flex-container {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.flex-box {
+    border: 5px gray solid;
+    margin: 10px;
+    padding: 10px;
+}
+.flex-box-seagreen {
+    background-color: seagreen;
+}
+.flex-box-goldenrod {
+    background-color: goldenrod;
+    color: fuchsia;
+}
+.flex-box-black {
+    background-color: black;
+    color: sandybrown;
+}
+
+
+.flex-container#center {
+    display: flex;
+    border-width: 5px;
+    border-color: orchid;
+    border-style: dotted;
+    justify-content: center;
+}
+
+
+
+.flex-container#end {
+    border-color: lightgoldenrodyellow;
+    border-style: dot-dot-dash;
+    justify-content: end;
+}
+
+
+.flex-container#space-around {
+    border-color: maroon;
+    border-style: double;
+    justify-content: space-around;
+}
+
+
+.flex-container#space-between {
+    border-color: rebeccapurple;
+    border-style: groove;
+    justify-content: space-between;
+}
+
+
+.flex-container#flex-start {
+    border-color: orange;
+    border-style: groove;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+
+.flex-container#flex-center {
+    border-color: mediumaquamarine;
+    border-style: groove;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.flex-container#flex-end {
+    border-color: blueviolet;
+    border-style: groove;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.flex-container#flex-basis > .flex-box {
+    flex-basis: 100%;
+}
+
+@media (min-width: 0px) and (max-width: 500px) {
+    h1 {
+        font-size: 50px;
+        background-color: #61dafb;
+        font-family: "Roboto Thin",sans-serif;
+        color: goldenrod;
+    }
+    p {
+        font-size: 0;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 1000px) {
+    h1 {
+        font-size: 50px;
+        background-color: tomato;
+        font-family: "Roboto Thin",sans-serif;
+        color: goldenrod;
+    }
+    p{
+        font-size: 5px;
+        background-color: black;
+        font-family: "Roboto Bold",sans-serif;
+        color: goldenrod;
+        border: dotted #282c34;
+    }
+}
+
+
+@media (min-width: 1001px) and (max-width: 1600px) {
+    div{
+        border: 5px double blueviolet;
+    }
+    h1 {
+        font-size: 50px;
+        background-color: seagreen;
+        font-family: "Roboto Thin",sans-serif;
+        color: goldenrod;
+    }
+    p{
+        font-size: 20px;
+        background-color: black;
+        font-family: "Roboto Bold",sans-serif;
+        color: darkslategray;
+        border: 10px dotted #282c34;
+    }
+}
+
+
+
+
 
 
 
