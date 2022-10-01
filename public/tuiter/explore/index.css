@@ -1,16 +1,33 @@
-body {
-    font-family: sans-serif;
+@font-face {
+    font-family: "Roboto Light";
+    src: url("../fonts/Roboto/Roboto-Light.ttf");
 }
+
+@font-face {
+    font-family: "Roboto Bold";
+    src: url("../fonts/Roboto/Roboto-Bold.ttf")
+}
+
+body {
+    font-family: "Roboto Bold", sans-serif;
+}
+
+.wd-no-style-a-tags {
+    text-decoration: none;
+    font-size: 15px;
+    color: whitesmoke;
+}
+
 .wd-explore-bg {
     background-color: black;
-    padding: 0 9px 0 16px;
+    padding: 0 16px 0 16px;
     margin: 0;
 }
 
 .wd-header-div {
     display: flex;
     flex-direction: column;
-    padding: 16px 16px 0 16px;
+    padding: 12px 0 0 12px;
     height: fit-content;
     border: 1px solid rgb(47,51,54);
 }
@@ -24,6 +41,7 @@ body {
 }
 
 .wd-searchbar-div {
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -61,6 +79,8 @@ body {
 }
 
 .wd-gear-icon {
+    position: absolute;
+    right: 12px;
     text-decoration: none;
     color: rgb(29,161,242);
 }
@@ -68,7 +88,7 @@ body {
 .wd-search-icon {
     color: grey;
     position: absolute;
-    left: 45px;
+    left: 16px;
 }
 
 .wd-ellipsis-icon {
@@ -92,12 +112,6 @@ body {
 .wd-trending-div > div > p {
     font-size: 13px;
     color: rgb(110,118,125);
-}
-
-.wd-trending-div > div > a {
-    font-size: 15px;
-    color: whitesmoke;
-    text-decoration: none;
 }
 
 .wd-suggested-post-container-with-author {
@@ -127,7 +141,9 @@ body {
 }
 
 .wd-suggested-post-date, .wd-suggested-post-title {
+    font-family: "Roboto Light", sans-serif;
     color: rgb(110,118,125);
+    font-size: 13px;
 }
 
 .wd-suggest-post-image {
