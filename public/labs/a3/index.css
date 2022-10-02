@@ -217,7 +217,14 @@ p#id-selector-2 {
     color: white;
 }
 
-.rotate-list-items li {
+.rotate-list-counterclockwise {
+    transform: rotate(-12deg);
+    width: 100px;
+    background-color: #61dafb;
+    color: black;
+}
+
+.rotate-list-items, .rotate-list-counterclockwise li {
     width: 100px;
     text-align: right;
 }
@@ -235,7 +242,7 @@ p#id-selector-2 {
     background-color: red;
 }
 .rotate-image {
-    transform: rotate(-10deg);
+    transform: rotate(-23deg);
 }
 .rotate-table {
     position: relative;
@@ -405,25 +412,25 @@ p#id-selector-2 {
 }
 
 @media (min-width: 0px) and (max-width: 500px) {
-    h1 {
+    .media-container h1 {
         font-size: 50px;
         background-color: #61dafb;
         font-family: "Roboto Thin",sans-serif;
         color: goldenrod;
     }
-    p {
+    .media-container p {
         font-size: 0;
     }
 }
 
 @media (min-width: 501px) and (max-width: 1000px) {
-    h1 {
+    .media-container h1 {
         font-size: 50px;
         background-color: tomato;
         font-family: "Roboto Thin",sans-serif;
         color: goldenrod;
     }
-    p{
+    .media-container p{
         font-size: 5px;
         background-color: black;
         font-family: "Roboto Bold",sans-serif;
@@ -434,16 +441,16 @@ p#id-selector-2 {
 
 
 @media (min-width: 1001px) and (max-width: 1600px) {
-    div{
+    .media-container div{
         border: 5px double blueviolet;
     }
-    h1 {
+    .media-container h1 {
         font-size: 50px;
         background-color: seagreen;
         font-family: "Roboto Thin",sans-serif;
         color: goldenrod;
     }
-    p{
+    .media-container p{
         font-size: 20px;
         background-color: black;
         font-family: "Roboto Bold",sans-serif;

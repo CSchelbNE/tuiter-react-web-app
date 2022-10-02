@@ -93,6 +93,7 @@ body {
     width: 504px;
     height: 264px;
     border: 1px solid rgb(47,51,54);
+    margin-bottom: 0;
 }
 
 .wd-user-post-body {
@@ -106,10 +107,14 @@ body {
 }
 
 .wd-image-content-desc-div {
+    position: relative;
+    bottom: 4px;
     border: 1px solid rgb(47,51,54);
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    max-width: 506px;
+    max-width: 504px;
+    padding-top: 0;
+    margin-top: 0;
 }
 
 .wd-bookmark-content-hyperlink {
