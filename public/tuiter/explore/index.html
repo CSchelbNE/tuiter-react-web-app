@@ -3,71 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+          rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+          rel="stylesheet"/>
     <link href="index.css" rel="stylesheet">
-    <!-- All credit goes to fontawesome for the creation and distribution of the icons
-     used in this webpage-->
-    <script src="https://kit.fontawesome.com/3921c529e1.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="wd-header-div wd-flexbox-col-orientation">
-        <div class="wd-searchbar-div wd-flexbox-row-orientation">
-                <i class="wd-search-icon fa fa-search"></i>
-                <input id="searchbar" class="wd-explore-searchbar" type="search" placeholder="Search Tuiter">
-            <a href="explore-settings.html" class="fa fa-thin fa-gear wd-gear-icon"></a>
+    <div class="container">
+        <div class="row mt-2">
+            <div class="col-2 ps-0">
+                <div class="list-group m-0">
+                    <div class="list-group-item">
+                        <i class="fab fa-twitter" style="color: black"></i>
+                    </div>
+                    <a href="../home.html" class="list-group-item">
+                        <i class="fa fa-home"></i>
+                        Home
+                    </a>
+                    <a href="index.html" class="list-group-item active">
+                            <i class="fa fa-hashtag"></i>
+                            Explore
+                    </a>
+                    <a href="../temp/notifications.html" class="list-group-item">
+                        <i class="fa fa-bell"></i>
+                        Notifications
+                    </a>
+                    <a href="../temp/messages.html" class="list-group-item">
+                        <i class="fa fa-envelope" style="color: black"></i>
+                        Messages
+                    </a>
+                    <a href="../bookmarks/index.html" class="list-group-item">
+                        <i class="fa fa-bookmark" style="color: black"></i>
+                        Bookmarks
+                    </a>
+                    <a href="../temp/lists.html" class="list-group-item">
+                        <i class="fa fa-list" style="color: black"></i>
+                        Lists
+                    </a>
+                    <a href="../profile.html" class="list-group-item">
+                        <i class="fa fa-user"></i>
+                        Profile
+                    </a>
+                    <a class="list-group-item">
+                            <i class="fa fa-circle fa-stack-1x"></i>
+                            <i class="fa fa-ellipsis-h fa-inverse fa-stack-1x"></i>
+                        More
+                    </a>
+                </div>
+                <div style="display: flex">
+                    <button id="tuit-button" class="mt-2 btn btn-primary wd-rounded-buttons">Tuit</button>
+                </div>
+            </div>
+            <div class="col-6 bg-black">
+                <h1>2</h1>
+            </div>
+            <div class="col-4 bg-warning">
+                <h1>3</h1>
+            </div>
+
         </div>
-        <div class="wd-navigation-bar wd-flexbox-row-orientation">
-            <a class="wd-highlight" href="">For you</a>
-            <a  href="#">Trending</a>
-            <a  href="#">COVID-19</a>
-            <a href="#">News</a>
-            <a href="#">Sports</a>
-            <a href="#">Entertainment</a>
-        </div>
-    </div>
-    <div class="wd-empty-space-div"></div>
-    <div class="wd-trending-div wd-flexbox-row-orientation">
-        <div>
-            <p>Trending in Science</p>
-            <a class="wd-no-style-a-tags" href="#">DALL-E AI Art Generator</a>
-            <p>175.5K Tuits</p>
-        </div>
-        <i class="fa fa-ellipsis-h wd-ellipsis-icon"></i>
-    </div>
-    <div class="wd-trending-div wd-flexbox-row-orientation">
-        <div>
-            <p>Trending in Sports</p>
-            <a class="wd-no-style-a-tags" href="#">Fantasy Football Daily Notes</a>
-            <p>15.5K Tuits</p>
-        </div>
-        <i class="fa fa-ellipsis-h wd-ellipsis-icon"></i>
-    </div>
-    <div class="wd-suggested-post-container-with-author wd-flexbox-col-orientation">
-        <div class="wd-suggested-post-with-author-content-div" style="display: flex; flex-direction: row; align-items: center;">
-            <p style="margin-right: 2px">The Boston Globe</p>
-            <i style="color: whitesmoke; margin-right: 2px" class="fa fa-check"></i>
-            <p class="wd-suggested-post-date">Yesterday</p>
-        </div>
-        <a class="wd-no-style-a-tags" href="#">The music of Brian Ferneyhough to be featured at Boston's own MFA</a>
-        <img class="wd-suggest-post-image" src="brian.jpg">
-    </div>
-    <div class="wd-suggested-post-container-without-author">
-        <p class="wd-suggested-post-title">Lorem Ipsum</p>
-        <a class="wd-no-style-a-tags" href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
-        <img class="wd-suggest-post-image" src="img.JPG">
-    </div>
-    <div class="wd-suggested-post-container-with-author wd-flexbox-col-orientation">
-        <div class="wd-suggested-post-with-author-content-div" style="display: flex; flex-direction: row; align-items: center;">
-            <p style="margin-right: 2px">The Atlantic</p>
-            <i style="color: whitesmoke; margin-right: 2px" class="fa fa-check"></i>
-            <p class="wd-suggested-post-date">Yesterday</p>
-        </div>
-        <a class="wd-no-style-a-tags" href="#">An Analysis of Time in Chris Marker's San Soleil</a>
-        <img class="wd-suggest-post-image" src="sans.jpg">
-    </div>
-    <div class="wd-suggested-post-container-without-author">
-        <p class="wd-suggested-post-title">Music Live</p>
-        <a class="wd-no-style-a-tags" href="#">Chris Dench: Literature for Solo Flute</a>
-        <img class="wd-suggest-post-image" src="1003751_chris-dench.jpg">
     </div>
 </body>
 </html>
