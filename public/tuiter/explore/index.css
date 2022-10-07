@@ -1,10 +1,70 @@
+@font-face {
+    font-family: "Roboto Light";
+    src: url("public/tuiter/fonts/Roboto/Roboto-Light.ttf");
+}
 
+@font-face {
+    font-family: "Roboto Bold";
+    src: url("public/tuiter/fonts/Roboto/Roboto-Bold.ttf")
+}
+
+body {
+    font-family: "Roboto Bold", sans-serif;
+}
+
+
+
+.wd-horizontal-flexbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: start;
+}
 
 .wd-rounded-buttons {
+    font-size: 14px;
     border-radius: 20px;
 }
 
 .wd-rounded-buttons#tuit-button {
     flex-grow: 1;
+}
 
+.wd-explore-searchbar {
+    color:rgb(110,118,125);
+    border-radius: 20px;
+    padding: 8px 4px 4px 40px;
+    border: 1px solid rgb(110,118,125);
+    flex-grow: 1;
+    font-size: 16px;
+    font-family: "Roboto Light",sans-serif;
+}
+
+
+.wd-searchbar-div {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.wd-gear-icon {
+    color: rgb(12,109,253);
+}
+
+.wd-at-symbol-style {
+    font-size: 13px;
+    font-family: "Roboto Light",sans-serif;
+}
+
+
+.wd-search-icon {
+    color:rgb(110,118,125);
+    position: absolute;
+    left: 20px;
+}
+
+.wd-circular-image {
+    /*width: 48px;*/
+    height: 36px;
+    border-radius: 50%;
 }
