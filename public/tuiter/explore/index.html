@@ -21,52 +21,52 @@
                     <div class="list-group-item">
                         <i class="fab fa-twitter fa-1x" style="color: black"></i>
                     </div>
-                    <a href="../home.html" class="list-group-item wd-horizontal-flexbox">
+                    <a href="../home.html" class="list-group-item d-flex flex-row align-items-center">
                         <i class="fa fa-home me-1 ps-0 p-1"></i>
                         <div class="d-none d-xl-block smaller-font">Home</div>
                     </a>
-                    <a href="index.html" class="list-group-item active wd-horizontal-flexbox">
+                    <a href="index.html" class="list-group-item active d-flex flex-row align-items-center">
                         <i class="fa fa-hashtag me-1 ps-0 p-1"></i>
                         <div class="d-none d-xl-block smaller-font">Explore</div>
                     </a>
-                    <a href="../temp/notifications.html" class="list-group-item wd-horizontal-flexbox">
+                    <a href="../temp/notifications.html" class="list-group-item d-flex flex-row align-items-center">
                         <i class="fa fa-bell me-1 ps-0 p-1"></i>
                         <span class="d-none end-100 d-xl-block smaller-font">Notifications</span>
                     </a>
-                    <a href="../temp/messages.html" class="list-group-item wd-horizontal-flexbox">
+                    <a href="../temp/messages.html" class="list-group-item d-flex flex-row align-items-center">
                         <i class="fa fa-envelope me-1 ps-0 p-1" style="color: black"></i>
                         <span class="d-none d-xl-block smaller-font">Messages</span>
                     </a>
-                    <a href="../bookmarks/index.html" class="list-group-item wd-horizontal-flexbox">
+                    <a href="../bookmarks/index.html" class="list-group-item d-flex flex-row align-items-center">
                         <i class="fa fa-bookmark me-1 ps-0 p-1" style="color: black"></i>
                         <span class="d-none d-xl-block smaller-font">Bookmarks</span>
                     </a>
-                    <a href="../temp/lists.html" class="list-group-item wd-horizontal-flexbox">
+                    <a href="../temp/lists.html" class="list-group-item d-flex flex-row align-items-center">
                         <i class="fa fa-list me-1 ps-0 p-1" style="color: black"></i>
                         <span class="d-none d-xl-block smaller-font">Lists</span>
                     </a>
-                    <a href="../profile.html" class="list-group-item wd-horizontal-flexbox">
+                    <a href="../profile.html" class="list-group-item d-flex flex-row align-items-center">
                         <i class="fa fa-user me-1 ps-0 p-1"></i>
                         <span class="d-none d-xl-block smaller-font">Profile</span>
                     </a>
-                    <a href="#" class="list-group-item wd-horizontal-flexbox">
+                    <a href="#" class="list-group-item d-flex flex-row align-items-center">
                         <i class="fa fa-circle me-1 ps-0 p-1"></i>
                         <span class="d-none d-xl-block smaller-font">More</span>
                     </a>
                 </div>
-                <div style="display: flex" class="p-1">
-                    <button id="tuit-button" class="mt-2 btn btn-primary wd-rounded-buttons">Tuit</button>
+                <div class="d-flex p-1">
+                    <button id="tuit-button" class="mt-2 btn btn-primary flex-grow-1 rounded-pill">Tuit</button>
                 </div>
             </div>
 <!--            start of the middle of the triptych -->
 <!--            input field-->
             <div class="col-10 col-lg-7 col-xl-6">
-                <div class="row mb-2">
-                    <div class="wd-searchbar-div col-11">
+                <div class="row mb-2 d-flex flex-row align-items-center">
+                    <div class="d-flex align-items-center position-relative col-11">
                         <input placeholder="Search Tuiter" type="search" class="form-control wd-explore-searchbar">
                         <i class="wd-search-icon fa fa-search"></i>
                     </div>
-                    <i class="fa fa-thin fa-gear fa-2x col-1 wd-gear-icon"></i>
+                    <i class="fa fa-thin fa-gear col-1 wd-gear-icon ps-0" style="font-size: 1.5em"></i>
                 </div>
 <!--                navbar-->
                 <div class="row">
@@ -90,6 +90,75 @@
                         </ul>
                     </div>
                 </div>
+                <div class="row">
+                    <img src="img/starship.webp">
+                </div>
+<!--                start of the trailing content grid items-->
+                <div class="list-group">
+                    <a href="#" class="wd-grid-item-a-tag larger-font list-group-item d-flex flex-row">
+                        <div class="d-flex flex-column">
+                            <div class="lighter-text">Web Development</div>
+                            <div class="d-flex flex-row align-items-center">
+                                <div class="fw-bold me-1">ReactJS</div>
+                                <i class="pe-1 smaller-font fa-solid fa-circle-check"></i>
+                                <div class="lighter-text"> - 2h</div>
+                            </div>
+                            <div class="fw-bold">
+                            React.js is a component based front end library that makes it very easy
+                            to build single page applications or SPAs.
+                            </div>
+                        </div>
+                        <img src="./img/reacticon.png" style="height: 75px; max-width: 75px"
+                             class="img-fluid rounded-corners-all-around">
+
+                    </a>
+                    <a href="#" class="wd-grid-item-a-tag larger-font list-group-item d-flex flex-row">
+                        <div class="d-flex flex-column">
+                            <div class="d-flex flex-row align-items-center">
+                                <div class="fw-bold me-1">JavaScript</div>
+                                <i class="pe-1 smaller-font fa-solid fa-circle-check"></i>
+                                <div class="lighter-text"> - 2h</div>
+                            </div>
+                            <div class="fw-bold">
+                               JavaScript is a programming language that can
+                                run on browsers as well as desktops
+                            </div>
+                            <div class="lighter-text">
+                                123K Tuits
+                            </div>
+                        </div>
+                        <img src="./img/javascript.jpg" style="height: 75px; max-width: 75px"
+                             class="img-fluid rounded-corners-all-around">
+
+                    </a>
+                    <a href="#" class="wd-grid-item-a-tag larger-font list-group-item d-flex flex-row">
+                        <div class="d-flex flex-column">
+                            <div class="lighter-text">Web Development</div>
+                            <div class="fw-bold me-1">Jquery</div>
+                            <div class="lighter-text">
+                                123K Tuits</div>
+                        </div>
+                        <img src="./img/jqueryicon.webp" style="height: 75px; max-width: 75px"
+                             class="img-fluid rounded-corners-all-around">
+                    </a>
+                    <a href="#" class="wd-grid-item-a-tag larger-font list-group-item d-flex flex-row">
+                        <div class="d-flex flex-column">
+                            <div class="lighter-text">Web Development</div>
+                            <div class="d-flex flex-row align-items-center">
+                                <div class="smaller-font fw-bold me-1">ReactJS</div>
+                                <i class="pe-1 smaller-font fa-solid fa-circle-check"></i>
+                                <div class="lighter-text"> - 2h</div>
+                            </div>
+                            <div class="fw-bold">
+                                React.js is a component based front end library that makes it very easy
+                                to build single page applications or SPAs.
+                            </div>
+                        </div>
+                        <img src="./img/reacticon.png" style="height: 75px; max-width: 75px"
+                             class="img-fluid rounded-corners-all-around">
+
+                    </a>
+                </div>
             </div>
 <!--            beginning of the righthand element in the triptych, not visible below lg threshold-->
             <div class="col-lg-4 col-xl-3 ps-2 pe-0 d-none d-lg-block">
@@ -100,13 +169,13 @@
                     <li class="list-group-item p-1 ps-2">
                         <div class="row">
                             <div class="col-2">
-                                <img src="1003751_chris-dench.jpg" class="wd-circular-image position-relative start-40">
+                                <img src="img/java-icon.webp" class="wd-circular-image position-relative start-40">
                             </div>
                             <div class="col-6">
                                 <div class="row">
                                     <div class="d-flex flex-row align-items-center">
                                         <span style="font-size: 12px; font-weight: bold">Java</span>
-                                        <i class="fa fa-check ps-1" style="color: black"></i>
+                                        <i class="ps-1 smaller-font fa-sharp fa-solid fa-circle-check"></i>
                                     </div>
                                 </div>
                                 <div class="row p-0">
@@ -114,20 +183,20 @@
                                 </div>
                             </div>
                             <div class="col-lg-3 col-xl-4 p-0 d-flex align-items-center justify-content-center">
-                                <button class="btn btn-primary wd-rounded-buttons">Follow</button>
+                                <button class="btn btn-primary smaller-font rounded-pill">Follow</button>
                             </div>
                         </div>
                     </li>
                     <li class="list-group-item p-1 ps-2">
                         <div class="row">
                             <div class="col-2">
-                                <img src="1003751_chris-dench.jpg" class="wd-circular-image position-relative start-40">
+                                <img src="img/relativityspaceicon.jpg" class="wd-circular-image position-relative start-40">
                             </div>
                             <div class="col-6">
                                 <div class="row">
                                     <div class="d-flex flex-row align-items-center">
                                         <span style="font-size: 12px; font-weight: bold">Relativity Space</span>
-                                        <i class="fa fa-check ps-1" style="color: black"></i>
+                                        <i class="ps-1 smaller-font fa-sharp fa-solid fa-circle-check"></i>
                                     </div>
                                 </div>
                                 <div class="row p-0">
@@ -135,20 +204,20 @@
                                 </div>
                             </div>
                             <div class="col-lg-3 col-xl-4 p-0 d-flex align-items-center justify-content-center">
-                                <button class="btn btn-primary wd-rounded-buttons">Follow</button>
+                                <button class="btn btn-primary smaller-font rounded-pill">Follow</button>
                             </div>
                         </div>
                     </li>
                     <li class="list-group-item p-1 ps-2">
                         <div class="row">
                             <div class="col-2">
-                                <img src="1003751_chris-dench.jpg" class="wd-circular-image position-relative start-40">
+                                <img src="img/virgin-1.svg" class="wd-circular-image position-relative start-40">
                             </div>
                             <div class="col-6">
                                 <div class="row">
                                     <div class="d-flex flex-row align-items-center">
                                         <div style="font-size: 12px; font-weight: bold">Virgin Galatic</div>
-                                        <i class="fa fa-check ps-1" style="color: black"></i>
+                                        <i class="ps-1 smaller-font fa-sharp fa-solid fa-circle-check"></i>
                                     </div>
                                 </div>
                                 <div class="row p-0">
@@ -156,20 +225,20 @@
                                 </div>
                             </div>
                             <div class="col-lg-3 col-xl-4 p-0 d-flex align-items-center justify-content-center">
-                                <button class="btn btn-primary wd-rounded-buttons">Follow</button>
+                                <button class="btn btn-primary smaller-font rounded-pill">Follow</button>
                             </div>
                         </div>
                     </li>
                     <li class="list-group-item p-1 ps-2">
                         <div class="row">
                             <div class="col-2">
-                                <img src="1003751_chris-dench.jpg" class="wd-circular-image position-relative start-40">
+                                <img src="img/nasaicon.png" class="wd-circular-image position-relative start-40">
                             </div>
                             <div class="col-6">
                                 <div class="row">
                                     <div class="d-flex flex-row align-items-center">
                                         <div style="font-size: 12px; font-weight: bold">NASA</div>
-                                        <i class="fa fa-check ps-1" style="color: black"></i>
+                                        <i class="ps-1 smaller-font fa-sharp fa-solid fa-circle-check"></i>
                                     </div>
                                 </div>
                                 <div class="row p-0">
@@ -177,20 +246,20 @@
                                 </div>
                             </div>
                             <div class="col-lg-3 col-xl-4 p-0 d-flex align-items-center justify-content-center">
-                                <button class="btn btn-primary wd-rounded-buttons">Follow</button>
+                                <button class="btn btn-primary smaller-font rounded-pill">Follow</button>
                             </div>
                         </div>
                     </li>
                     <li class="list-group-item p-1 ps-2">
                         <div class="row">
                             <div class="col-2">
-                                <img src="1003751_chris-dench.jpg" class="wd-circular-image position-relative start-40">
+                                <img src="img/telsaicon.jpg" class="wd-circular-image position-relative start-40">
                             </div>
                             <div class="col-6">
                                 <div class="row">
                                     <div class="d-flex flex-row align-items-center">
                                         <div style="font-size: 12px; font-weight: bold">Tesla</div>
-                                        <i class="fa fa-check ps-1" style="color: black"></i>
+                                        <i class="ps-1 smaller-font fa-sharp fa-solid fa-circle-check"></i>
                                     </div>
                                 </div>
                                 <div class="row p-0">
@@ -198,7 +267,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-3 col-xl-4 p-0 d-flex align-items-center justify-content-center">
-                                <button class="btn btn-primary wd-rounded-buttons">Follow</button>
+                                <button class="btn btn-primary smaller-font rounded-pill">Follow</button>
                             </div>
                         </div>
                     </li>

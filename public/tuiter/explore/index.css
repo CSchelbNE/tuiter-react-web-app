@@ -16,20 +16,13 @@ body {
     font-size: 14px;
 }
 
-.wd-horizontal-flexbox {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-items: start;
+.larger-font {
+    font-size: 16px;
 }
 
-.wd-rounded-buttons {
-    font-size: 14px;
-    border-radius: 20px;
-}
-
-.wd-rounded-buttons#tuit-button {
-    flex-grow: 1;
+.lighter-text {
+    color: rgb(110,118,125);
+    font-family: "Roboto Light",sans-serif;
 }
 
 .wd-explore-searchbar {
@@ -53,6 +46,14 @@ body {
     color: rgb(12,109,253);
 }
 
+.wd-grid-item-a-tag:focus {
+    color: black;
+}
+
+.wd-grid-item-a-tag:hover {
+    color: black;
+}
+
 .wd-at-symbol-style {
     font-size: 13px;
     font-family: "Roboto Light",sans-serif;
@@ -71,7 +72,6 @@ body {
 }
 
 .wd-circular-image {
-    /*width: 48px;*/
     height: 36px;
     border-radius: 50%;
 }
