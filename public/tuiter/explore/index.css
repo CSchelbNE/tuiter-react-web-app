@@ -12,7 +12,9 @@ body {
     font-family: "Roboto Bold", sans-serif;
 }
 
-
+.smaller-font {
+    font-size: 14px;
+}
 
 .wd-horizontal-flexbox {
     display: flex;
@@ -54,6 +56,11 @@ body {
 .wd-at-symbol-style {
     font-size: 13px;
     font-family: "Roboto Light",sans-serif;
+}
+
+.wd-icon-style {
+    width: 21px;
+    height: 21px;
 }
 
 
