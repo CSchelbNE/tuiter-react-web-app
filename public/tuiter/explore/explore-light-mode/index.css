@@ -28,7 +28,7 @@ body {
 .wd-explore-searchbar {
     color:rgb(110,118,125);
     border-radius: 20px;
-    padding: 8px 4px 4px 40px;
+    padding: 6px 4px 6px 45px;
     border: 1px solid rgb(110,118,125);
     flex-grow: 1;
     font-size: 16px;
@@ -65,11 +65,18 @@ body {
 }
 
 
-.wd-search-icon {
+/*.wd-search-icon {*/
+/*    color:rgb(110,118,125);*/
+/*    position: absolute;*/
+/*    left: 20px;*/
+/*}*/
+
+.fa-search {
     color:rgb(110,118,125);
     position: absolute;
-    left: 20px;
+    left: 30px;
 }
+
 
 .wd-circular-image {
     height: 36px;
