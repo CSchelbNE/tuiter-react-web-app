@@ -17,12 +17,22 @@ body {
     color: rgb(239,243,244);
 }
 
+/*controls general icon size*/
 body i {
     color: rgb(239,243,244);
     width: 18px;
     height: 18px;
 }
 
+.fourteen-px-font {
+    font-size: 14px;
+}
+
+.sixteen-px-font {
+    font-size: 16px;
+}
+
+/*list group */
 .list-group-item {
     color: rgb(239,243,244);
     background-color: black;
@@ -58,15 +68,9 @@ body i {
 }
 
 
-.smaller-font {
-    font-size: 14px;
-}
 
-.larger-font {
-    font-size: 16px;
-}
 
-.lighter-text {
+.grey-light-font {
     color: rgb(110,118,125);
     font-family: "Roboto Light",sans-serif;
 }
@@ -99,8 +103,6 @@ body i {
     align-items: center;
 }
 
-
-
 .nav-tabs {
     border-bottom: none;
 }
@@ -119,12 +121,23 @@ body i {
     color:white;
 }
 
-
-
 .fa-gear {
     color: white;
     width: 10px;
     height: 10px;
+}
+
+
+.wd-at-symbol-style {
+    font-size: 13px;
+    font-family: "Roboto Light",sans-serif;
+}
+
+
+.fa-search {
+    color:rgb(110,118,125);
+    position: absolute;
+    left: 30px;
 }
 
 .wd-grid-item-a-tag:focus {
@@ -135,24 +148,28 @@ body i {
     color: rgb(239,243,244);
 }
 
-.wd-at-symbol-style {
-    font-size: 13px;
-    font-family: "Roboto Light",sans-serif;
-}
-
-.wd-icon-style {
-    width: 21px;
-    height: 21px;
-}
-
-
-.fa-search {
-    color:rgb(110,118,125);
-    position: absolute;
-    left: 30px;
-}
-
-.wd-circular-image {
+.rounded-circle{
     height: 36px;
-    border-radius: 50%;
+}
+
+/*.wd-circular-image {*/
+/*    height: 36px;*/
+/*    border-radius: 50%;*/
+/*}*/
+
+.list-group#who-to-follow-list-group {
+    border: 1px solid rgb(33,35,39);
+}
+
+.list-group#who-to-follow-list-group .list-group-item {
+   background-color: rgb(33,35,39);
+    border: none;
+}
+
+.rounded-corners-all-around {
+    border-radius: 8px;
+}
+
+.terms-and-conditions-font-size {
+    font-size: 11px;
 }
