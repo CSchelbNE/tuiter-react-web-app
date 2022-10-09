@@ -25,24 +25,16 @@ body {
     font-family: "Roboto Light",sans-serif;
 }
 
-.wd-explore-searchbar {
+
+.form-control {
     color:rgb(110,118,125);
     border-radius: 20px;
     padding: 6px 4px 6px 45px;
     border: 1px solid rgb(110,118,125);
-    flex-grow: 1;
-    font-size: 16px;
-    font-family: "Roboto Light",sans-serif;
 }
 
 
-.wd-searchbar-div {
-    display: flex;
-    position: relative;
-    align-items: center;
-}
-
-.wd-gear-icon {
+.fa-gear {
     color: rgb(12,109,253);
 }
 
@@ -60,11 +52,6 @@ body {
     font-family: "Roboto Light",sans-serif;
 }
 
-.wd-icon-style {
-    width: 21px;
-    height: 21px;
-}
-
 .fa-stack {
     font-size: 1.1em;
     width: 24px;
@@ -74,7 +61,7 @@ body {
     vertical-align: middle;
 }
 
-.fa-stack#elipse {
+.fa-stack#ellipse {
     bottom: 38px;
     left: 3px;
     font-size: .9rem;
@@ -88,7 +75,6 @@ body {
 }
 
 
-.wd-circular-image {
+.rounded-circle{
     height: 36px;
-    border-radius: 50%;
 }

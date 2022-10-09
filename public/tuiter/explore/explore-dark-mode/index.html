@@ -64,8 +64,11 @@
                     <span class="d-none d-xl-block fourteen-px-font">Profile</span>
                 </a>
                 <a href="#" class="list-group-item d-flex flex-row align-items-center">
-                    <div class="ps-0 pe-2">
-                        <i class="fa fa-circle me-3 ps-0 p-1"></i>
+                    <div class="ps-0 pe-3">
+                      <span id="circle-ellipse" class="fa-stack">
+                          <i class="fa fa-circle fa-stack"></i>
+                          <i id="ellipse" class="fa fa-ellipsis-h fa-stack fa-inverse" style="color: black"></i>
+                      </span>
                     </div>
                     <span class="d-none d-xl-block fourteen-px-font">More</span>
                 </a>
@@ -83,7 +86,11 @@
                      fourteen-px-font grey-light-font flex-grow-1">
                     <i class="wd-search-icon fa fa-search"></i>
                 </div>
-                <i class="fa fa-gear col-1 ps-0"></i>
+                <div class="col-1 d-none d-sm-block pe-sm-3 pe-lg-2">
+                    <a href="#">
+                        <i class="fa fa-gear"></i>
+                    </a>
+                </div>
             </div>
             <!--                navbar-->
             <div class="m-0 row middle-column-border-bottom">
@@ -110,13 +117,15 @@
                     </ul>
                 </div>
             </div>
-            <div class="m-0 row position-relative middle-column-border-bottom">
-                    <img src="images/myuniverse.webp">
-                    <div class="m-1 mb-2 position-absolute start-0 bottom-0">
-                    <div class="fourteen-px-font" style="color: white; font-size:12px">Music	• Last Night </div>
-                        <div style="font-size: 22px; font-weight: bold">BTS and Coldplay release their new song, My Universe</div>
-                    </div>
-            </div>
+            <a href="#">
+                <div class="m-0 row position-relative middle-column-border-bottom">
+                        <img src="images/myuniverse.webp">
+                        <div class="m-1 mb-2 position-absolute start-0 bottom-0">
+                        <div class="fourteen-px-font" style="color: white; font-size:12px">Music	• Last Night </div>
+                            <div style="font-size: 22px; font-weight: bold; color: white">BTS and Coldplay release their new song, My Universe</div>
+                        </div>
+                </div>
+            </a>
             <!--                start of the trailing content grid items-->
             <div class="list-group">
                 <a href="#" class="wd-grid-item-a-tag fourteen-px-font middle-column-border-bottom
@@ -230,6 +239,7 @@
                 </div>
         </div>
     </div>
+</div>
 </div>
 </body>
 </html>
