@@ -32,10 +32,39 @@ body i {
     font-size: 16px;
 }
 
+.grey-light-font {
+    color: rgb(110,118,125);
+    font-family: "Roboto Light",sans-serif;
+}
+
+
+.form-control {
+    color:rgb(33,35,39);
+    background-color: rgb(33,35,39);
+    border-radius: 20px;
+    padding: 6px 4px 6px 45px;
+    border: 1px solid rgb(33,35,39);
+}
+
 /*list group */
 .list-group-item {
     color: rgb(239,243,244);
     background-color: black;
+}
+
+.list-group-item.active {
+    background-color: black;
+    font-weight: bolder;
+    border: none;
+}
+
+.list-group#who-to-follow-list-group {
+    border: 1px solid rgb(33,35,39);
+}
+
+.list-group#who-to-follow-list-group .list-group-item {
+    background-color: rgb(33,35,39);
+    border: none;
 }
 
 .middle-column-border-bottom {
@@ -46,6 +75,9 @@ body i {
     border: 1px solid rgb(33,35,39);
 }
 
+
+
+/* button classes */
 .btn-primary#tuit-button {
     background-color: rgb(30,155,240);
 }
@@ -67,41 +99,8 @@ body i {
     color: black;
 }
 
+/* nav classes */
 
-
-
-.grey-light-font {
-    color: rgb(110,118,125);
-    font-family: "Roboto Light",sans-serif;
-}
-
-.fa-ellipsis-h {
-    color: rgb(110,118,125);
-}
-
-.list-group-item.active {
-    background-color: black;
-    font-weight: bolder;
-    border: none;
-}
-
-.wd-explore-searchbar {
-    color:rgb(33,35,39);
-    background-color: rgb(33,35,39);
-    border-radius: 20px;
-    padding: 6px 4px 6px 45px;
-    border: 1px solid rgb(33,35,39);
-    flex-grow: 1;
-    font-size: 14px;
-    font-family: "Roboto Light",sans-serif;
-}
-
-
-.wd-searchbar-div {
-    display: flex;
-    position: relative;
-    align-items: center;
-}
 
 .nav-tabs {
     border-bottom: none;
@@ -121,24 +120,28 @@ body i {
     color:white;
 }
 
+/* fa classes */
 .fa-gear {
     color: white;
     width: 10px;
     height: 10px;
 }
 
-
-.wd-at-symbol-style {
-    font-size: 13px;
-    font-family: "Roboto Light",sans-serif;
+.fa-ellipsis-h {
+    color: rgb(110,118,125);
 }
-
 
 .fa-search {
     color:rgb(110,118,125);
     position: absolute;
     left: 30px;
 }
+
+.wd-at-symbol-style {
+    font-size: 13px;
+    font-family: "Roboto Light",sans-serif;
+}
+
 
 .wd-grid-item-a-tag:focus {
     color: rgb(239,243,244);
@@ -152,20 +155,6 @@ body i {
     height: 36px;
 }
 
-/*.wd-circular-image {*/
-/*    height: 36px;*/
-/*    border-radius: 50%;*/
-/*}*/
-
-.list-group#who-to-follow-list-group {
-    border: 1px solid rgb(33,35,39);
-}
-
-.list-group#who-to-follow-list-group .list-group-item {
-   background-color: rgb(33,35,39);
-    border: none;
-}
-
 .rounded-corners-all-around {
     border-radius: 8px;
 }
@@ -173,3 +162,6 @@ body i {
 .terms-and-conditions-font-size {
     font-size: 11px;
 }
+
+
+
