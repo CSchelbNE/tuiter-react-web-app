@@ -32,7 +32,7 @@ const NavigationSidebar = () => {
                         <i class="fa fa-user me-1 ps-0 p-1"></i>
                         <span class="d-none d-xl-block smaller-font">Profile</span>
                     </a>
-                    <a href="../../profile.html" class="list-group-item d-flex flex-row align-items-center">
+                    <a href="#" class="list-group-item d-flex flex-row align-items-center">
 <!--                        <i class="fa fa-circle me-1 ps-0 p-1"></i>-->
                         <i class="fa fa-circle me-1 ps-0 p-1"></i>
                         <span class="d-none d-xl-block smaller-font">More</span>
@@ -40,7 +40,7 @@ const NavigationSidebar = () => {
                 </div>
                 <div class="d-flex p-1">
                     <button id="tuit-button" class="mt-2 btn btn-primary flex-grow-1 rounded-pill">Tuit</button>
-                </div
+                </div>
  `);
 }
 export default NavigationSidebar;

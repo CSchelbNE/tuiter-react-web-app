@@ -1,0 +1,71 @@
+
+.fourteen-px-font {
+    font-size: 14px;
+}
+
+.sixteen-px-font {
+    font-size: 16px;
+}
+
+.lighter-text {
+    color: rgb(110,118,125);
+
+}
+
+.form-control {
+    color:rgb(110,118,125);
+    border-radius: 20px;
+    padding: 6px 4px 6px 45px;
+    border: 1px solid rgb(110,118,125);
+}
+
+
+
+.wd-grid-item-a-tag:focus {
+    color: white;
+}
+
+.wd-grid-item-a-tag:hover {
+    color: white;
+}
+
+.wd-at-symbol-style {
+    font-size: 13px;
+    font-family: "Roboto Light",sans-serif;
+}
+
+.fa-stack {
+    font-size: 1.1em;
+    width: 24px;
+}
+
+.fa-stack  i {
+    vertical-align: middle;
+}
+
+.fa-stack#ellipse {
+    bottom: 38px;
+    left: 3px;
+    font-size: .9rem;
+}
+
+
+.fa-search {
+    color:rgb(110,118,125);
+    position: absolute;
+    left: 30px;
+}
+
+
+.rounded-circle{
+    height: 36px;
+}
+
+.rounded-pill{
+    font-size: 13px;
+}
+
+
+.rounded-corners-all-around {
+    border-radius: 8px;
+}
