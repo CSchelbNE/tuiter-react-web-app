@@ -18,6 +18,12 @@ function App() {
             <a href="labs/a4/index.html" className="App-link">Assignment 4</a>
           </li>
           <li>
+            <a href="labs/a5/index.html" className="App-link">Assignment 5</a>
+          </li>
+          <li>
+            <a href="labs/a5/todos/index.html" className="App-link">Assignment 5: Todos</a>
+          </li>
+          <li>
             <a href="tuiter/navigation.html"  className="App-link">Tuiter</a>
           </li>
         </ul>
