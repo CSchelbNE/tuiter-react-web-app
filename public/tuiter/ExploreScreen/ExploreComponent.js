@@ -2,7 +2,7 @@ import PostSummaryList from "./PostSummaryList/PostSummaryList.js";
 import MainImageContent from "./MainImageContent.js";
 import ExploreNavbar from "./ExploreNavbar.js";
 
-const ExploreScreen = () => {
+const ExploreComponent = () => {
     return (`
            ${ExploreNavbar()}
            ${MainImageContent()} 
@@ -10,4 +10,4 @@ const ExploreScreen = () => {
     `);
 }
 
-export default ExploreScreen
+export default ExploreComponent
