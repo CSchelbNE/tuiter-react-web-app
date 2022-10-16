@@ -6,7 +6,7 @@ const ExploreComponent = () => {
     return (`
            ${ExploreNavbar()}
            ${MainImageContent()} 
-           ${PostSummaryList()}
+           ${PostSummaryList("mt-2")}
     `);
 }
 

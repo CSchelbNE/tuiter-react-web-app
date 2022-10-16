@@ -1,6 +1,6 @@
 const NavigationSidebar = () => {
     return(`
-            <div class="list-group m-0">
+            <div class="list-group">
                     <div class="list-group-item">
                         <i class="fab fa-twitter fa-1x"></i>
                     </div>
