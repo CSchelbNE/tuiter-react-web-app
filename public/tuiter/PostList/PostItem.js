@@ -61,7 +61,7 @@ const PostItem = (post) => {
                             </div>
                                     </div>
                                     <a href="#" style="text-decoration: none">
-                                        <i class="mt-2 fa fa-ellipsis-h text-white"></i>
+                                        <i class="mt-2 fa fa-ellipsis-h lighter-text"></i>
                                     </a>
                                 </div>
                             </div>
