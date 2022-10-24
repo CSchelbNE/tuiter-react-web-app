@@ -8,11 +8,12 @@ const PostItem = ({post}) => {
     const contentBody = post.contentBody !== undefined ? post.contentBody : "";
     const link = post.link !== undefined ? post.link : "";
     const postContentDiv = contentTitle !== "" && contentBody !== "" ?
-                           (<a className="wd-post-content pt-2 pb-2 ps-3 pe-3 fourteen-px-font wd-central-content-desc col-12 text-decoration-none"
+                           (<a className="pt-2 pb-2 ps-3 pe-3
+                            fourteen-px-font wd-central-content-desc col-12 text-decoration-none"
                                href="#">
-                                <div className="text-white mb-1">${contentTitle}</div>
-                                <div className="lighter-text">${contentBody}</div>
-                                <div className="d-flex flex-row align-items-center">
+                                <div className="fw-bold text-black">{contentTitle}</div>
+                                <div className="lighter-text">{contentBody}</div>
+                                <div className="d-flex flex-row align-items-center home-lighter-text">
                                     <FontAwesomeIcon icon={faChain} className="me-1"/>
                                     <div className="lighter-text">{link}</div>
                                 </div>
@@ -25,13 +26,12 @@ const PostItem = ({post}) => {
                         <div className="d-flex flex-column">
                             <div className="d-flex fourteen-px-font flex-row align-items-center">
                                 <a href="#" className="d-flex flex-row align-items-center text-decoration-none">
-                                    <div>{post.userName}</div>
+                                    <div className="fw-bold text-black">{post.userName}</div>
                                     <FontAwesomeIcon icon={faCircleCheck} className="ms-1 pe-1 smaller-font"/>
-                                    <div className="lighter-text">{"@"+post.handle}</div>
+                                    <div className="home-lighter-text">{"@"+post.handle}</div>
                                 </a>
                             </div> 
-                            <div className="fourteen-px-font">
-                                {post.userPost}
+                            <div dangerouslySetInnerHTML={{__html: post.userPost}} className="fourteen-px-font">
                             </div>
                             <a href="#">
                                 <img src={"../../images/"+post.image} className="mt-2 col-12 wd-central-content-img"/>
@@ -40,25 +40,25 @@ const PostItem = ({post}) => {
                              <div className="wd-footer-icons p-2 d-flex flex-row justify-content-between">
                                 <div>
                                     <a className="d-flex flex-row align-items-center text-decoration-none" href="#">
-                                        <FontAwesomeIcon icon={faComment} className="me-2"/>
-                                        <div className="fourteen-px-font">${post.comments}</div>
+                                        <FontAwesomeIcon icon={faComment} className="me-2 home-lighter-text"/>
+                                        <div className="fourteen-px-font home-lighter-text">{post.comments}</div>
                                     </a>
                                 </div>
                                 <div>
                                     <a className="d-flex flex-row align-items-center text-decoration-none" href="#">
-                                        <FontAwesomeIcon icon={faRefresh} className="me-2"/>
-                                        <div className="fourteen-px-font">${post.retuits}</div>
+                                        <FontAwesomeIcon icon={faRefresh} className="me-2 home-lighter-text"/>
+                                        <div className="fourteen-px-font home-lighter-text">{post.retuits}</div>
                                     </a>
                                 </div>
                                 <div>
                                     <a className="d-flex flex-row align-items-center text-decoration-none" href="#">
-                                        <FontAwesomeIcon icon={faHeart} className="me-2"/>
-                                         <div className="fourteen-px-font">${post.hearts}</div>
+                                        <FontAwesomeIcon icon={faHeart} className="me-2 home-lighter-text"/>
+                                         <div className="fourteen-px-font home-lighter-text">{post.hearts}</div>
                                     </a>
                                 </div>
                                 <div>
-                                    <a class="d-flex flex-row align-items-center text-decoration-none" href="#" >
-                                        <FontAwesomeIcon icon={faShareSquare} className="me-2"/>
+                                    <a className="d-flex flex-row align-items-center text-decoration-none" href="#" >
+                                        <FontAwesomeIcon icon={faShareSquare} className="me-2 home-lighter-text"/>
                                     </a>
                                 </div>
                             </div>

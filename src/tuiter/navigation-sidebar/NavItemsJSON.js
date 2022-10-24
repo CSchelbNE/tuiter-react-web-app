@@ -3,19 +3,23 @@ import {
     faBookmark, faCircle,
     faEnvelope,
     faHashtag,
-    faHouse, faList, faUser
+    faHouse, faList, faUser, faFlask
 } from "@fortawesome/free-solid-svg-icons";
 
 export default  [ {
-    href : "../HomeScreen/index.html",
+    href : "/tuiter/home",
     name : "Home",
     icon : faHouse
 },
 {
-    href : "../ExploreScreen/index.html",
+    href : "/tuiter/explore",
         name : "Explore",
     icon : faHashtag
-},
+},{
+    href: "/",
+    name: "Labs",
+    icon: faFlask
+    },
 {
     href : "#",
         name : "Notifications",
@@ -27,7 +31,7 @@ export default  [ {
     icon : faEnvelope
 },
 {
-    href : "../bookmarks/index.html",
+    href : "#",
         name : "Bookmarks",
     icon : faBookmark
 },

@@ -3,7 +3,6 @@ import {faCircleCheck} from "@fortawesome/free-regular-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 const WhoToFollowListItem = ({who}) => {
-    console.log(who.who);
     return (
         <div>
             <li className="list-group-item p-1 ps-2">
