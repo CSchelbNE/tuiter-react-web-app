@@ -4,7 +4,6 @@ import Labs from "./labs";
 import Tuiter from "./tuiter";
 import {BrowserRouter} from "react-router-dom";
 import {Routes, Route} from "react-router";
-import NavigationSidebar from "./tuiter/navigation-sidebar";
 
 function App() {
   return (
