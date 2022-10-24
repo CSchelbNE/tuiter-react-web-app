@@ -13,7 +13,7 @@ const ExploreNavbar = () => {
                 </div>
                 <div className="col-1 d-none d-sm-block pe-sm-2">
                     <a href="#">
-                        <FontAwesomeIcon icon={faGear} className="ps-0"/>
+                        <FontAwesomeIcon icon={faGear} style={{fontSize: "1.5rem"}}className="ps-0"/>
                     </a>
                 </div>
              </div>
