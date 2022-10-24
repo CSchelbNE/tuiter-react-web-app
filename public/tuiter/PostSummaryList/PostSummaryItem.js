@@ -40,6 +40,7 @@ const PostSummaryItem = (post) => {
             </div>
             <img  src=${"../../../../images/"+ post.image} style="height: 75px; max-width: 75px"
                  class="rounded-corners-all-around img-fluid">
+                 
         </a>
         `);
     }
