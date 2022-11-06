@@ -1,12 +1,13 @@
 import React from "react";
-import posts from "./posts";
-import PostListItem from "./post-list-item";
-import {v4 as uuidv4} from 'uuid';
+import TuitList from "../tuits/tuit-list";
+import WhatsHappening from "./whats-happening";
 
 const HomeComponent = () => {
     return (
-        <div className="list-group">
-            {posts.map(post => <PostListItem key={uuidv4()} post={post}/>)}
+        <div>
+            <div className="mb-1" style={{fontSize:"24px", fontWeight: "bold"}}>Home</div>
+            <WhatsHappening/>
+            <TuitList/>
         </div>
     )
 }

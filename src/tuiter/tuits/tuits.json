@@ -1,0 +1,41 @@
+[
+  {
+    "_id": 234,
+    "topic": "Space",
+    "userName": "SpaceX",
+    "time": "2h",
+    "userIcon": "spacex.jpg",
+    "liked": true,
+    "replies": 123,
+    "retuits": 432,
+    "likes": 2345,
+    "handle": "@spacex",
+    "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
+  },
+  {
+    "_id": 235,
+    "topic": "Tesla",
+    "userName": "Tesla",
+    "time": "4d",
+    "userIcon": "tesla.jpg",
+    "liked": false,
+    "replies": 211,
+    "retuits": 2493,
+    "likes": 211,
+    "handle": "@tesla",
+    "tuit": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla posuere ante vel tellus sagittis hendrerit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc lacinia, lectus sed pharetra pretium, sapien odio aliquam lectus, et laoreet elit nisl nec augue. Curabitur porta feugiat urna. Donec non dignissim dolor. Morbi et quam vel mauris condimentum condimentum sed in lorem. Nulla sed neque at ligula pretium consectetur."
+  },
+  {
+    "_id": 236,
+    "topic": "SpaceX",
+    "userName": "SpaceX",
+    "time": "2h",
+    "userIcon": "spacex.jpg",
+    "liked": true,
+    "replies": 111,
+    "retuits": 203,
+    "likes": 56,
+    "handle": "@tesla",
+    "tuit": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla posuere ante vel tellus sagittis hendrerit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc lacinia, lectus sed pharetra pretium, sapien odio aliquam lectus, et laoreet elit nisl nec augue. Curabitur porta feugiat urna. Donec non dignissim dolor. Morbi et quam vel mauris condimentum condimentum sed in lorem. Nulla sed neque at ligula pretium consectetur."
+  }
+]
