@@ -1,7 +1,6 @@
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {
     faComment,
-    faEllipsisH,
     faHeart,
     faRefresh,
     faShareSquare
@@ -9,21 +8,28 @@ import {
 import React, {useState} from "react";
 
 const TuitStats = ({stats}) => {
+    const increment = () => {
+        changeLike(liked);
+    }
+    const decrement = () => {
+        changeLike(unliked);
+    }
+    const [likes, setLikes] = useState(stats.likes);
     const unliked =
         <div>
-            <a className="d-flex flex-row align-items-center text-decoration-none" href="#">
-                <FontAwesomeIcon onClick={(e => changeLike(liked))} icon={faHeart}
+            <a onClick={increment} className="d-flex flex-row align-items-center text-decoration-none" href="#">
+                <FontAwesomeIcon icon={faHeart}
                                  className="me-2 home-lighter-text"/>
-                <div onClick={(e => changeLike(liked))} className="fourteen-px-font home-lighter-text">{stats.likes}</div>
+                <div className="fourteen-px-font home-lighter-text">{likes}</div>
             </a>
         </div>
 
     const liked =
         <div>
-            <a className="d-flex flex-row align-items-center text-decoration-none" href="#">
-                <FontAwesomeIcon onClick={(e => changeLike(unliked))} style={{color: "red "}}
+            <a onClick={decrement} className="d-flex flex-row align-items-center text-decoration-none" href="#">
+                <FontAwesomeIcon  style={{color: "red "}}
                                  icon={faHeart} className="me-2 home-lighter-text"/>
-                <div onClick={(e => changeLike(unliked))} className="fourteen-px-font home-lighter-text">{stats.likes}</div>
+                <div  className="fourteen-px-font home-lighter-text">{likes}</div>
             </a>
         </div>
 

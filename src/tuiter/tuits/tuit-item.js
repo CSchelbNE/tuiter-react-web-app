@@ -6,10 +6,9 @@ import {deleteTuit} from "../reducers/tuit-reducer";
 import {useDispatch} from "react-redux";
 
 const TuitItem = ({tuit}) => {
-    const stats = {replies: tuit.replies, retuits: tuit.retuits, likes: tuit.likes, liked: tuit.liked};
+    const stats = {_id: tuit._id, replies: tuit.replies, retuits: tuit.retuits, likes: tuit.likes, liked: tuit.liked};
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        console.log(id)
         dispatch(deleteTuit(id))
     }
 

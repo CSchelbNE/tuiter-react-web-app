@@ -35,7 +35,7 @@ const tuitsSlice = createSlice({
                                                              ...templateTuit,
                                                              _id: (new Date()).getTime(),
                                                          })
-                                       }
+                                       },
                                    }
                                });
 

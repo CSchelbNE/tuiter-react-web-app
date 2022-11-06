@@ -7,6 +7,7 @@ import {configureStore} from "@reduxjs/toolkit";
 import whoReducer from "./reducers/who-reducer";
 import tuitReducer from "./reducers/tuit-reducer";
 import HomeComponent from "./home";
+import ProfileComponent from "./profile";
 
 const store = configureStore({
      reducer: {who: whoReducer, tuits: tuitReducer}
@@ -24,6 +25,7 @@ function Tuiter() {
                         <Routes>
                             <Route path="explore" element={<ExploreComponent/>}/>
                             <Route path="home" element={<HomeComponent/>}/>
+                            <Route path="profile" element={<ProfileComponent/>}/>
                         </Routes>
                     </div>
                     <div className="col-lg-4 col-xl-3 ps-2 pe-0 d-none d-lg-block">
