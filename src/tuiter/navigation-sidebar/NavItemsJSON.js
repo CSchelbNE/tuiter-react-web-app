@@ -41,7 +41,7 @@ export default  [ {
     icon: faList
 },
 {
-    href: "../profile.html",
+    href: "/tuiter/profile",
         name: "Profile",
     icon: faUser
 },

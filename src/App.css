@@ -104,6 +104,17 @@
   font-size: 13px;
 }
 
+.wd-profile-button-abs {
+  right: 15px;
+  bottom: 25px;
+  background-color: white;
+  border: 1px solid rgb(110,118,125);
+}
+
+.wd-remove-input-focus:focus {
+  outline: none;
+}
+
 .rounded-corners-all-around {
   border-radius: 50%;
   height: 52px;
