@@ -9,31 +9,20 @@ import React, {useState} from "react";
 
 const TuitStats = ({stats}) => {
     const increment = () => {
-        changeLike(liked);
+        changeLike(true);
+        setStyle({color: "red"})
+        setLikes(likes+1)
     }
     const decrement = () => {
-        changeLike(unliked);
+        changeLike(false);
+        console.log(isLiked)
+        setStyle("")
+        setLikes(likes-1)
     }
+
     const [likes, setLikes] = useState(stats.likes);
-    const unliked =
-        <div>
-            <a onClick={increment} className="d-flex flex-row align-items-center text-decoration-none" href="#">
-                <FontAwesomeIcon icon={faHeart}
-                                 className="me-2 home-lighter-text"/>
-                <div className="fourteen-px-font home-lighter-text">{likes}</div>
-            </a>
-        </div>
-
-    const liked =
-        <div>
-            <a onClick={decrement} className="d-flex flex-row align-items-center text-decoration-none" href="#">
-                <FontAwesomeIcon  style={{color: "red "}}
-                                 icon={faHeart} className="me-2 home-lighter-text"/>
-                <div  className="fourteen-px-font home-lighter-text">{likes}</div>
-            </a>
-        </div>
-
-    const [isLiked,changeLike] = useState(stats.liked === true ? liked : unliked)
+    const [isLiked,changeLike] = useState(stats.liked === true);
+    const [style, setStyle] = useState(stats.liked === true ? {color: "red"} : "")
     return (
         <>
             <div className="wd-footer-icons p-2 d-flex flex-row justify-content-between">
@@ -49,7 +38,13 @@ const TuitStats = ({stats}) => {
                         <div className="fourteen-px-font home-lighter-text">{stats.retuits}</div>
                     </a>
                 </div>
-                {isLiked}
+                <div>
+                    <a onClick={isLiked ? decrement : increment} className="d-flex flex-row align-items-center text-decoration-none" href="#">
+                        <FontAwesomeIcon icon={faHeart} style={style}
+                                         className="me-2 home-lighter-text"/>
+                        <div className="fourteen-px-font home-lighter-text">{likes}</div>
+                    </a>
+                </div>
                 <div>
                     <a className="d-flex flex-row align-items-center text-decoration-none" href="#" >
                         <FontAwesomeIcon icon={faShareSquare} className="me-2 home-lighter-text"/>

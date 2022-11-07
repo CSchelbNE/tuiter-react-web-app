@@ -35,10 +35,10 @@ const tuitsSlice = createSlice({
                                                              ...templateTuit,
                                                              _id: (new Date()).getTime(),
                                                          })
-                                       },
+                                       }
                                    }
                                });
 
 
-export const {createTuit, deleteTuit} = tuitsSlice.actions;
+export const {createTuit, deleteTuit, increment,decrement} = tuitsSlice.actions;
 export default tuitsSlice.reducer;
