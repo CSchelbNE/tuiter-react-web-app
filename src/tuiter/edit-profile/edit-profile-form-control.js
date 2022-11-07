@@ -3,7 +3,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faX} from "@fortawesome/free-solid-svg-icons";
 import {useNavigate} from "react-router";
 import {useDispatch} from "react-redux";
-import {editProfile} from "../tuiter/reducers/profile-reducer";
+import {editProfile} from "../reducers/profile-reducer";
 
 const EditProfileFormControl = ({props}) => {
     const [name, setName] = React.useState(props.firstName + " " + props.lastName);

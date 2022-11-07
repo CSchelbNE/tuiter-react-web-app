@@ -1,9 +1,22 @@
 import React, {useState} from "react";
 import {useSelector} from "react-redux";
+import {addTodo, deleteTodo, todoDoneToggle} from "./reducers/todo-reducer";
+import {useDispatch} from "react-redux";
 
 const Todos = () => {
     const todos = useSelector(state => state.todos);
     const [todo, setTodo] = useState({do: ""});
+    const dispatch = useDispatch();
+    const createTodoClickHandler = () => {
+        dispatch(addTodo(todo))
+    }
+    const deleteTodoClickHandler = (index) => {
+        dispatch(deleteTodo(index))
+    }
+    const toggleTodoDone = (todo) => {
+        dispatch(todoDoneToggle(todo))
+    }
+
     const todoChangeHandler = (event) => {
         const doValue = event.target.value;
         const newTodo = {
@@ -16,7 +29,7 @@ const Todos = () => {
             <h3>Todos</h3>
             <ul className="list-group">
                 <li className="list-group-item">
-                    <button
+                    <button onClick={createTodoClickHandler}
                             className="btn btn-primary w-25
                           float-end">
                         Create</button>
@@ -24,8 +37,19 @@ const Todos = () => {
                            value={todo.do}
                            className="form-control w-75"/>
                 </li>
-                {todos.map(todo =>
+                {todos.map((todo,index) =>
                     <li className="list-group-item">
+                        <button onClick={() =>
+                            deleteTodoClickHandler(index)}
+                                className="btn btn-danger
+                      float-end ms-2">
+                            Delete
+                        </button>
+                        <input type="checkbox"
+                               checked={todo.done}
+                               onChange={() =>
+                                   toggleTodoDone(todo)}
+                               className="me-2"/>
                         {todo.do}
                     </li>
                 )}

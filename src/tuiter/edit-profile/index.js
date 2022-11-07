@@ -1,4 +1,4 @@
-import ProfileHeader from "../tuiter/profile/ProfileHeader";
+import ProfileHeader from "../profile/ProfileHeader";
 import {useSelector} from "react-redux";
 import EditProfileFormControl from "./edit-profile-form-control";
 

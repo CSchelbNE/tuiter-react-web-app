@@ -9,7 +9,7 @@ import tuitReducer from "./reducers/tuit-reducer";
 import HomeComponent from "./home";
 import ProfileComponent from "./profile";
 import profileReducer from "./reducers/profile-reducer";
-import EditProfileComponent from "../edit-profile";
+import EditProfileComponent from "./edit-profile";
 
 const store = configureStore({
      reducer: {who: whoReducer, tuits: tuitReducer, profile: profileReducer}
