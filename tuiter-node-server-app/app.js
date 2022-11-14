@@ -10,4 +10,5 @@ app.use(cors())
 HelloController(app)
 UserController(app)
 TuitsController(app)
-app.listen(2000)
+// Some process was already listening on my loopback at 4000, so I moved the port listening to 2000.
+app.listen(process.env.PORT || 2000)

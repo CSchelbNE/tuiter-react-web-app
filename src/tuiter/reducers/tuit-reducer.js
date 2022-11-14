@@ -14,6 +14,8 @@ export const templateTuit = {
     "topic": "Space",
     "time": "Now",
     "liked": false,
+    "disliked" : false,
+    "dislikes": 0,
     "replies": 0,
     "retuits": 0,
     "likes": 0,
