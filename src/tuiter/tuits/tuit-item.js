@@ -2,17 +2,14 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCircleCheck, faX} from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 import TuitStats from "./tuit-stats";
-import {deleteTuit} from "../reducers/tuit-reducer";
 import {useDispatch} from "react-redux";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
 
 const TuitItem = ({tuit}) => {
-    const stats = {_id: tuit._id, replies: tuit.replies, retuits: tuit.retuits, likes: tuit.likes, liked: tuit.liked};
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id))
+        dispatch(deleteTuitThunk(id));
     }
-
-
     return (
         <div className="list-group-item">
             <div className="pt-2 d-flex flex-row justify-content-between row">
@@ -29,7 +26,7 @@ const TuitItem = ({tuit}) => {
                         <div>
                             {tuit.tuit}
                         </div>
-                        <TuitStats stats={stats}/>
+                        <TuitStats tuit={tuit}/>
                     </div>
                     <div>
                         <a href="#" className="text-decoration-none">

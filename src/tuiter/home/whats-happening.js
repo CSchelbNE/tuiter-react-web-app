@@ -2,16 +2,18 @@ import React, {useState} from "react";
 import {faSignal, faImage, faFaceSmile, faLocationDot} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {useDispatch} from "react-redux";
-import {createTuit} from "../reducers/tuit-reducer";
+import {createTuitThunk} from "../../services/tuits-thunks";
+import {templateTuit} from "../reducers/tuit-reducer";
 
 const WhatsHappening = () => {
     let [whatsHappening, setWhatsHappening] = useState('');
     const dispatch = useDispatch();
     const tuitClickHandler = () => {
         const newTuit = {
+            ...templateTuit,
             tuit: whatsHappening
         }
-        dispatch(createTuit(newTuit))
+        dispatch(createTuitThunk(newTuit));
     }
     return (
         <div className="row">
