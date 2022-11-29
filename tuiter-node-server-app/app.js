@@ -3,8 +3,14 @@ import HelloController from "./controllers/hello-controller.js"
 import UserController from "./controllers/users-controller.js";
 import TuitsController from "./controllers/tuits/tuits-controller.js";
 import cors from "cors"
+import mongoose from "mongoose";
+
+const DB_CONNECTION_STR = process.env.DB_CONNECTION_STRING || "mongodb://localhost:27017/tuiter"
+
+// "mongodb+srv://cschelb:F1shg0d132435!@cluster0.cqrbput.mongodb.net/?retryWrites=true&w=majority"
 
 const app = express()
+mongoose.connect(DB_CONNECTION_STR);
 app.use(express.json())
 app.use(cors())
 HelloController(app)

@@ -6,13 +6,15 @@ import {
     faThumbsDown,
     faThumbsUp
 } from "@fortawesome/free-solid-svg-icons";
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import {useDispatch} from "react-redux";
 import {updateTuitThunk} from "../../services/tuits-thunks";
 
 const TuitStats = ({tuit}) => {
     const dispatch = useDispatch();
+
     const setLike = () => {
+        tuit.callback()
         if (!tuit.liked) {
             const newTuit = (!tuit.disliked) ? {
                 ...tuit,
@@ -27,26 +29,30 @@ const TuitStats = ({tuit}) => {
             }
             dispatch(updateTuitThunk(newTuit));
         } else {
+
             const newTuit = {
                 ...tuit,
                 likes: tuit.likes - 1,
-                liked: false
+                liked: false,
             }
             dispatch(updateTuitThunk(newTuit));
         }
     }
 
     const setDislike   = () => {
+        tuit.callback();
         if (!tuit.disliked) {
 
             const newTuit =  (!tuit.liked) ? {
                 ...tuit,
+                callback: null,
                 dislikes: tuit.dislikes + 1,
                 disliked: true
             } : {
                 ...tuit,
                 dislikes: tuit.dislikes + 1,
                 disliked: true,
+                callback: null,
                 likes: tuit.likes -1,
                 liked: false
             }
@@ -55,7 +61,8 @@ const TuitStats = ({tuit}) => {
             const newTuit = {
                 ...tuit,
                 dislikes: tuit.dislikes - 1,
-                disliked: false
+                disliked: false,
+                callback: null
             }
             dispatch(updateTuitThunk(newTuit));
         }
