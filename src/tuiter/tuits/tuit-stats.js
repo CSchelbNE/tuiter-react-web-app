@@ -11,10 +11,12 @@ import {useDispatch} from "react-redux";
 import {updateTuitThunk} from "../../services/tuits-thunks";
 
 const TuitStats = ({tuit}) => {
+    console.log(tuit);
     const dispatch = useDispatch();
+    const [likes, setLikes] = useState(tuit.likes);
+    const [dislikes, setDislikes] = useState(tuit.dislikes);
 
     const setLike = () => {
-        tuit.callback()
         if (!tuit.liked) {
             const newTuit = (!tuit.disliked) ? {
                 ...tuit,
@@ -27,6 +29,7 @@ const TuitStats = ({tuit}) => {
                 disliked: false,
                 dislikes: tuit.dislikes -1
             }
+            setLikes(likes+1);
             dispatch(updateTuitThunk(newTuit));
         } else {
 
@@ -35,35 +38,34 @@ const TuitStats = ({tuit}) => {
                 likes: tuit.likes - 1,
                 liked: false,
             }
+            setLikes(likes-1);
             dispatch(updateTuitThunk(newTuit));
         }
     }
 
     const setDislike   = () => {
-        tuit.callback();
         if (!tuit.disliked) {
-
             const newTuit =  (!tuit.liked) ? {
                 ...tuit,
-                callback: null,
                 dislikes: tuit.dislikes + 1,
                 disliked: true
             } : {
                 ...tuit,
                 dislikes: tuit.dislikes + 1,
                 disliked: true,
-                callback: null,
                 likes: tuit.likes -1,
                 liked: false
             }
+            setDislikes(dislikes-1);
             dispatch(updateTuitThunk(newTuit));
         } else {
             const newTuit = {
                 ...tuit,
                 dislikes: tuit.dislikes - 1,
                 disliked: false,
-                callback: null
             }
+            setDislikes(dislikes-1);
+            // setDislikes(dislikes-1);
             dispatch(updateTuitThunk(newTuit));
         }
     }
@@ -101,6 +103,10 @@ const TuitStats = ({tuit}) => {
                     <a className="d-flex flex-row align-items-center text-decoration-none" href="#" >
                         <FontAwesomeIcon icon={faShareSquare} className="me-2 home-lighter-text"/>
                     </a>
+                </div>
+                <div className="d-sm-none">
+                    {likes}
+                    {dislikes}
                 </div>
             </div>
 

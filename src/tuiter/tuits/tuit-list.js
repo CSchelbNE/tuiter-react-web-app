@@ -12,13 +12,9 @@ const TuitList = () => {
         const {tuits, loading} = useSelector(
             state => state.tuitsData
         )
-        const [wasClicked, setClicked] = useState(false);
-        const clickCallback = () => {
-            setClicked(!wasClicked);
-        }
         useEffect(() => {
             dispatch(findTuitsThunk())
-        }, [wasClicked])
+        }, [])
     return (
             <div className="list-group">
                 {
@@ -27,7 +23,7 @@ const TuitList = () => {
                         Loading...
                     </li>
                 }
-                {tuits.map(tuit => <TuitItem key={uuidv4()} tuit={{...tuit, callback: clickCallback}}/>)}
+                {tuits.map(tuit => <TuitItem key={uuidv4()} tuit={tuit}/>)}
             </div>
         )
 }
